@@ -7,7 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Peca.h"
+#import "Tabuleiro.h"
+#import "GESTURI.h"
+#import "SlideDesu.h"
+#import "dados.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    BOOL jogoAtivo;
+    NSMutableArray *pecasController;
+    Tabuleiro *meuTabuleiro;
+    UIImageView *mihaImagem;
+    UISwipeGestureRecognizer *meusSwipes[4];
+    CGPoint pontoTocado;
+    Peca *pecaTocada;
+    GESTURI *gestureQuadrado;
+    SlideDesu *slideSugoi;
+    BOOL figuraUsada;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *labelFimJogo;
 
 @end
