@@ -21,6 +21,15 @@
 		F21F956D18C11579000E199B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F954F18C11579000E199B /* UIKit.framework */; };
 		F21F957518C11579000E199B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F21F957318C11579000E199B /* InfoPlist.strings */; };
 		F21F957718C11579000E199B /* iPuzzle_0_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F21F957618C11579000E199B /* iPuzzle_0_2Tests.m */; };
+		F21F958818C11C0A000E199B /* Tabuleiro.m in Sources */ = {isa = PBXBuildFile; fileRef = F21F958718C11C0A000E199B /* Tabuleiro.m */; };
+		F21F958B18C11C2A000E199B /* Peca.m in Sources */ = {isa = PBXBuildFile; fileRef = F21F958A18C11C2A000E199B /* Peca.m */; };
+		F21F958D18C12579000E199B /* totoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F21F958C18C12579000E199B /* totoro.jpg */; };
+		F25BC6AC18CA650200519F67 /* dados.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BC6AB18CA650200519F67 /* dados.m */; };
+		F299A5F918C8EE0700141439 /* GESTURI.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5F818C8EE0700141439 /* GESTURI.m */; };
+		F299A5FA18C8EE0700141439 /* GESTURI.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5F818C8EE0700141439 /* GESTURI.m */; };
+		F299A5FD18C90BFE00141439 /* SlideDesu.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5FC18C90BFE00141439 /* SlideDesu.m */; };
+		F299A5FE18C90BFE00141439 /* SlideDesu.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5FC18C90BFE00141439 /* SlideDesu.m */; };
+		F2D8709618C7BE06001AC8CF /* totoro2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2D8709518C7BE06001AC8CF /* totoro2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,18 @@
 		F21F957218C11579000E199B /* iPuzzle 0.2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPuzzle 0.2Tests-Info.plist"; sourceTree = "<group>"; };
 		F21F957418C11579000E199B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F21F957618C11579000E199B /* iPuzzle_0_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPuzzle_0_2Tests.m; sourceTree = "<group>"; };
+		F21F958618C11C0A000E199B /* Tabuleiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabuleiro.h; sourceTree = "<group>"; };
+		F21F958718C11C0A000E199B /* Tabuleiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabuleiro.m; sourceTree = "<group>"; };
+		F21F958918C11C2A000E199B /* Peca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peca.h; sourceTree = "<group>"; };
+		F21F958A18C11C2A000E199B /* Peca.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Peca.m; sourceTree = "<group>"; };
+		F21F958C18C12579000E199B /* totoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = totoro.jpg; sourceTree = "<group>"; };
+		F25BC6AA18CA650200519F67 /* dados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dados.h; sourceTree = "<group>"; };
+		F25BC6AB18CA650200519F67 /* dados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dados.m; sourceTree = "<group>"; };
+		F299A5F718C8EE0700141439 /* GESTURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GESTURI.h; sourceTree = "<group>"; };
+		F299A5F818C8EE0700141439 /* GESTURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GESTURI.m; sourceTree = "<group>"; };
+		F299A5FB18C90BFE00141439 /* SlideDesu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideDesu.h; sourceTree = "<group>"; };
+		F299A5FC18C90BFE00141439 /* SlideDesu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideDesu.m; sourceTree = "<group>"; };
+		F2D8709518C7BE06001AC8CF /* totoro2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = totoro2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +133,25 @@
 		F21F955118C11579000E199B /* iPuzzle 0.2 */ = {
 			isa = PBXGroup;
 			children = (
+				F25BC6AA18CA650200519F67 /* dados.h */,
+				F25BC6AB18CA650200519F67 /* dados.m */,
+				F2D8709518C7BE06001AC8CF /* totoro2.jpg */,
+				F21F958C18C12579000E199B /* totoro.jpg */,
+				F21F958918C11C2A000E199B /* Peca.h */,
+				F21F958A18C11C2A000E199B /* Peca.m */,
+				F21F958618C11C0A000E199B /* Tabuleiro.h */,
+				F21F958718C11C0A000E199B /* Tabuleiro.m */,
+				F21F955218C11579000E199B /* Supporting Files */,
 				F21F955A18C11579000E199B /* AppDelegate.h */,
 				F21F955B18C11579000E199B /* AppDelegate.m */,
 				F21F955D18C11579000E199B /* Main.storyboard */,
 				F21F956018C11579000E199B /* ViewController.h */,
 				F21F956118C11579000E199B /* ViewController.m */,
+				F299A5F718C8EE0700141439 /* GESTURI.h */,
+				F299A5F818C8EE0700141439 /* GESTURI.m */,
+				F299A5FB18C90BFE00141439 /* SlideDesu.h */,
+				F299A5FC18C90BFE00141439 /* SlideDesu.m */,
 				F21F956318C11579000E199B /* Images.xcassets */,
-				F21F955218C11579000E199B /* Supporting Files */,
 			);
 			path = "iPuzzle 0.2";
 			sourceTree = "<group>";
@@ -228,9 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21F958D18C12579000E199B /* totoro.jpg in Resources */,
 				F21F956418C11579000E199B /* Images.xcassets in Resources */,
 				F21F955618C11579000E199B /* InfoPlist.strings in Resources */,
 				F21F955F18C11579000E199B /* Main.storyboard in Resources */,
+				F2D8709618C7BE06001AC8CF /* totoro2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21F958B18C11C2A000E199B /* Peca.m in Sources */,
 				F21F956218C11579000E199B /* ViewController.m in Sources */,
+				F21F958818C11C0A000E199B /* Tabuleiro.m in Sources */,
+				F299A5F918C8EE0700141439 /* GESTURI.m in Sources */,
 				F21F955C18C11579000E199B /* AppDelegate.m in Sources */,
+				F25BC6AC18CA650200519F67 /* dados.m in Sources */,
 				F21F955818C11579000E199B /* main.m in Sources */,
+				F299A5FD18C90BFE00141439 /* SlideDesu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F299A5FE18C90BFE00141439 /* SlideDesu.m in Sources */,
 				F21F957718C11579000E199B /* iPuzzle_0_2Tests.m in Sources */,
+				F299A5FA18C8EE0700141439 /* GESTURI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +504,7 @@
 				F21F957C18C11579000E199B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F21F957D18C11579000E199B /* Build configuration list for PBXNativeTarget "iPuzzle 0.2Tests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +513,7 @@
 				F21F957F18C11579000E199B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
