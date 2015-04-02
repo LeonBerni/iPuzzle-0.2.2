@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9A33F5EA-676B-4110-A534-D9D27E6180A5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iPuzzle 0.2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1E7A2825008D9BDA7FD61C9A03DE474590BC8A99</key>
+		<string>https://github.com/LeonBerni/iPuzzle-0.2.2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPuzzle 0.2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1E7A2825008D9BDA7FD61C9A03DE474590BC8A99</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/LeonBerni/iPuzzle-0.2.2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1E7A2825008D9BDA7FD61C9A03DE474590BC8A99</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1E7A2825008D9BDA7FD61C9A03DE474590BC8A99</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPuzzle-0.2.2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
