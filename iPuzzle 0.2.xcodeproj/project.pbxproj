@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		359E62171ACDC9E2003CED56 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359E62151ACDC9E2003CED56 /* Main_iPad.storyboard */; };
 		5BD27AC31ACDBEF5001BFFA5 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD27AC21ACDBEF5001BFFA5 /* MainMenuViewController.m */; };
 		F21F954C18C11579000E199B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F954B18C11579000E199B /* Foundation.framework */; };
 		F21F954E18C11579000E199B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F954D18C11579000E199B /* CoreGraphics.framework */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		359E62161ACDC9E2003CED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		5BD27AC11ACDBEF5001BFFA5 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		5BD27AC21ACDBEF5001BFFA5 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		F21F954818C11579000E199B /* iPuzzle 0.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPuzzle 0.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 				F21F955A18C11579000E199B /* AppDelegate.h */,
 				F21F955B18C11579000E199B /* AppDelegate.m */,
 				F21F955D18C11579000E199B /* Main.storyboard */,
+				359E62151ACDC9E2003CED56 /* Main_iPad.storyboard */,
 				F21F956018C11579000E199B /* ViewController.h */,
 				F21F956118C11579000E199B /* ViewController.m */,
 				F299A5F718C8EE0700141439 /* GESTURI.h */,
@@ -235,7 +238,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "LEONARDO LEGRADY SALGADO GIGLIOTTI";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F21F956818C11579000E199B = {
 						TestTargetID = F21F954718C11579000E199B;
@@ -269,6 +272,7 @@
 				F21F958D18C12579000E199B /* totoro.jpg in Resources */,
 				F21F956418C11579000E199B /* Images.xcassets in Resources */,
 				F21F955618C11579000E199B /* InfoPlist.strings in Resources */,
+				359E62171ACDC9E2003CED56 /* Main_iPad.storyboard in Resources */,
 				F21F955F18C11579000E199B /* Main.storyboard in Resources */,
 				F2D8709618C7BE06001AC8CF /* totoro2.jpg in Resources */,
 			);
@@ -322,6 +326,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		359E62151ACDC9E2003CED56 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				359E62161ACDC9E2003CED56 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		F21F955418C11579000E199B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +444,7 @@
 				GCC_PREFIX_HEADER = "iPuzzle 0.2/iPuzzle 0.2-Prefix.pch";
 				INFOPLIST_FILE = "iPuzzle 0.2/iPuzzle 0.2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -445,6 +458,7 @@
 				GCC_PREFIX_HEADER = "iPuzzle 0.2/iPuzzle 0.2-Prefix.pch";
 				INFOPLIST_FILE = "iPuzzle 0.2/iPuzzle 0.2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

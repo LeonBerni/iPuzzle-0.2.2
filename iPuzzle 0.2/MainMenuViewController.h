@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *btnPlay;
+@property (weak, nonatomic) IBOutlet UIButton *btnCamera;
+@property (weak, nonatomic) IBOutlet UIButton *btnLib;
 @property (weak, nonatomic) IBOutlet UIButton *btnAbout;
 
 @end

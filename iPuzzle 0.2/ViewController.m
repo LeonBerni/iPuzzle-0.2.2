@@ -19,7 +19,7 @@
     figuraUsada = 0;
     [super viewDidLoad];
     [self iniciaSwipes];
-    mihaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro.jpg"]];
+    mihaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro2.jpg"]];
     [mihaImagem setFrame: CGRectMake(X, Y, W, H)];
     meuTabuleiro = [[Tabuleiro alloc] initWithImage: mihaImagem];
     [[self view] addSubview: mihaImagem];
@@ -29,9 +29,9 @@
     [[self labelFimJogo] setHidden: YES];
     [self randomizaLayout];
     
-    slideSugoi = [[SlideDesu alloc] initWithTarget:self action:@selector(slideFunction:)];
-    gestureQuadrado = [[GESTURI alloc] initWithTarget:self action:@selector(quadradoFunction:)];
-
+    //    slideSugoi = [[SlideDesu alloc] initWithTarget:self action:@selector(slideFunction:)];
+    //    gestureQuadrado = [[GESTURI alloc] initWithTarget:self action:@selector(quadradoFunction:)];
+    
 }
 
 
@@ -198,7 +198,7 @@
                     pecaTocada.posicaoY = tempPosY;
                     destino.posicaoX = pecaTocada.posicaoX;
                     pecaTocada.posicaoX = tempPosX;
-                
+                    
                     destino.imagemPeca.frame = pecaTocada.imagemPeca.frame;
                     [UIView animateWithDuration:0.25 animations:^ {
                         pecaTocada.imagemPeca.frame = temp;

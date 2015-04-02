@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#define L 5
-#define W 800
-#define H 600
-#define X 112
-#define Y 40
+#define L 4
+#define W 512
+#define H 512
+#define X 0
+#define Y 0
 #define R 30
 
 @interface dados : NSObject
