@@ -19,7 +19,9 @@
     figuraUsada = 0;
     [super viewDidLoad];
     [self iniciaSwipes];
-    minhaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro2.jpg"]];
+    if (!minhaImagem) {
+            minhaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro2.jpg"]];
+    }
     [minhaImagem setFrame: CGRectMake(X, Y, W, H)];
     meuTabuleiro = [[Tabuleiro alloc] initWithImage: minhaImagem];
     [[self view] addSubview: minhaImagem];
@@ -237,7 +239,7 @@
 }
 
 -(void)setImage:(UIImage *)image{
-    [minhaImagem setImage:image];
+    minhaImagem = [[UIImageView alloc] initWithImage: image];
 }
 
 @end
