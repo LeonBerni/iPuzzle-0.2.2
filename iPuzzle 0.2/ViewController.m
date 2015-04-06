@@ -19,11 +19,11 @@
     figuraUsada = 0;
     [super viewDidLoad];
     [self iniciaSwipes];
-    mihaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro2.jpg"]];
-    [mihaImagem setFrame: CGRectMake(X, Y, W, H)];
-    meuTabuleiro = [[Tabuleiro alloc] initWithImage: mihaImagem];
-    [[self view] addSubview: mihaImagem];
-    [mihaImagem setHidden:YES];
+    minhaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro2.jpg"]];
+    [minhaImagem setFrame: CGRectMake(X, Y, W, H)];
+    meuTabuleiro = [[Tabuleiro alloc] initWithImage: minhaImagem];
+    [[self view] addSubview: minhaImagem];
+    [minhaImagem setHidden:YES];
     jogoAtivo = TRUE;
     [self receberImagensTabuleiro];
     [[self labelFimJogo] setHidden: YES];
@@ -80,10 +80,10 @@
 
 - (IBAction) slideFunction:(id)sender {
     if (figuraUsada == 0) {
-        mihaImagem.image = [UIImage imageNamed:@"totoro2.jpg"];
+        minhaImagem.image = [UIImage imageNamed:@"totoro2.jpg"];
         figuraUsada = 1;
     } else {
-        mihaImagem.image = [UIImage imageNamed:@"totoro.jpg"];
+        minhaImagem.image = [UIImage imageNamed:@"totoro.jpg"];
         figuraUsada = 0;
     }
     for (int i = 0; i < L; i++) {
@@ -92,8 +92,8 @@
         }
     }
     [self iniciaSwipes];
-    meuTabuleiro = [[Tabuleiro alloc] initWithImage: mihaImagem];
-    [mihaImagem setHidden:YES];
+    meuTabuleiro = [[Tabuleiro alloc] initWithImage: minhaImagem];
+    [minhaImagem setHidden:YES];
     [self receberImagensTabuleiro];
     [[self labelFimJogo] setHidden: YES];
     jogoAtivo = TRUE;
@@ -108,7 +108,7 @@
                 [[[[pecasController objectAtIndex:i] objectAtIndex:j] imagemPeca] setHidden:YES];
             }
         }
-        [mihaImagem setHidden:NO];
+        [minhaImagem setHidden:NO];
     }
     [gestureQuadrado setSucesso:FALSE];
     [[self view] addGestureRecognizer: slideSugoi];
@@ -234,6 +234,10 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+-(void)setImage:(UIImage *)image{
+    [minhaImagem setImage:image];
 }
 
 @end

@@ -12,12 +12,13 @@
 #import "GESTURI.h"
 #import "SlideDesu.h"
 #import "dados.h"
+#import "ImageDelegate.h"
 
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController<ImageDelegate> {
     BOOL jogoAtivo;
     NSMutableArray *pecasController;
     Tabuleiro *meuTabuleiro;
-    UIImageView *mihaImagem;
+    UIImageView *minhaImagem;
     UISwipeGestureRecognizer *meusSwipes[4];
     CGPoint pontoTocado;
     Peca *pecaTocada;

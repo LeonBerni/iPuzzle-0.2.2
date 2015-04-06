@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		359E62161ACDC9E2003CED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5B46CE061AD2FF6F0080111F /* ImageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDelegate.h; sourceTree = "<group>"; };
 		5BD27AC11ACDBEF5001BFFA5 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		5BD27AC21ACDBEF5001BFFA5 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		F21F954818C11579000E199B /* iPuzzle 0.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPuzzle 0.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +152,7 @@
 				F21F955B18C11579000E199B /* AppDelegate.m */,
 				F21F955D18C11579000E199B /* Main.storyboard */,
 				359E62151ACDC9E2003CED56 /* Main_iPad.storyboard */,
+				5B46CE061AD2FF6F0080111F /* ImageDelegate.h */,
 				F21F956018C11579000E199B /* ViewController.h */,
 				F21F956118C11579000E199B /* ViewController.m */,
 				F299A5F718C8EE0700141439 /* GESTURI.h */,
