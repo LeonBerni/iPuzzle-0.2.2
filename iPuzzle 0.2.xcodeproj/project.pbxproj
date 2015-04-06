@@ -231,9 +231,10 @@
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F21F954718C11579000E199B = {
-						DevelopmentTeam = 7BA896ETMQ;
+						DevelopmentTeam = 754BL35T3Q;
 					};
 					F21F956818C11579000E199B = {
+						DevelopmentTeam = 754BL35T3Q;
 						TestTargetID = F21F954718C11579000E199B;
 					};
 				};
