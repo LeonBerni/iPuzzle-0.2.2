@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Jag-gh-DDS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Ta7-h8-lMj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -30,7 +30,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="-1089"/>
+            <point key="canvasLocation" x="454" y="-472"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FcF-mV-NLU">
+            <objects>
+                <navigationController id="Ta7-h8-lMj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UwE-Iq-2M1">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jag-gh-DDS" kind="relationship" relationship="rootViewController" id="8AM-NZ-9VM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5M7-hi-NjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1510" y="-286"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="2m3-Se-ceS">
@@ -49,7 +65,6 @@
                                 </state>
                                 <connections>
                                     <action selector="btnLib:" destination="Jag-gh-DDS" eventType="touchUpInside" id="dYG-41-7gR"/>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="PDZ-VT-g6c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4iH-55-A6l">
@@ -79,13 +94,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sAc-O2-PNY">
+                                <rect key="frame" x="489" y="491" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="R9T-sI-KiN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4y7-XW-G3f">
+                                <rect key="frame" x="392" y="308" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="byV-tz-22y"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="ImageTaken" destination="4y7-XW-G3f" id="stH-ao-kkk"/>
                         <outlet property="btnAbout" destination="bbH-Ce-sdE" id="1bP-Gs-Jcv"/>
                         <outlet property="btnCamera" destination="PKZ-6i-KEw" id="hah-pH-0a2"/>
+                        <outlet property="btnDebug" destination="sAc-O2-PNY" id="uMz-pv-09s"/>
                         <outlet property="btnLib" destination="bbH-Ce-sdE" id="lnj-ij-y2N"/>
                     </connections>
                 </viewController>

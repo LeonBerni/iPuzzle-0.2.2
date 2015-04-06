@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.imageToBeShuffled = [[UIImage alloc]init];
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -51,14 +52,16 @@
     picker.delegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationMaskPortrait];
+    [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
     
     [self presentViewController:picker animated:YES completion:NULL];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-//    self.imageView.image = chosenImage;
+     self.imageToBeShuffled = info[UIImagePickerControllerEditedImage];
+     self.ImageTaken.image = self.imageToBeShuffled;
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
@@ -69,6 +72,8 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
+
+
 
 /*
 #pragma mark - Navigation
