@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Peca.h"
 #import "Tabuleiro.h"
-#import "GESTURI.h"
-#import "SlideDesu.h"
 #import "dados.h"
 #import "ImageDelegate.h"
 
@@ -22,8 +20,6 @@
     UISwipeGestureRecognizer *meusSwipes[4];
     CGPoint pontoTocado;
     Peca *pecaTocada;
-    GESTURI *gestureQuadrado;
-    SlideDesu *slideSugoi;
     BOOL figuraUsada;
 }
 

@@ -22,7 +22,12 @@
     if (!minhaImagem) {
             minhaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro2.jpg"]];
     }
-    [minhaImagem setFrame: CGRectMake(X, Y, W, H)];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+    [minhaImagem setFrame: CGRectMake(0, 0, 256, 256)];
+    } else{
+    
+    [minhaImagem setFrame: CGRectMake(0, 0, 512, 512)];
+    }
     meuTabuleiro = [[Tabuleiro alloc] initWithImage: minhaImagem];
     [[self view] addSubview: minhaImagem];
     [minhaImagem setHidden:YES];
@@ -30,9 +35,6 @@
     [self receberImagensTabuleiro];
     [[self labelFimJogo] setHidden: YES];
     [self randomizaLayout];
-    
-    //    slideSugoi = [[SlideDesu alloc] initWithTarget:self action:@selector(slideFunction:)];
-    //    gestureQuadrado = [[GESTURI alloc] initWithTarget:self action:@selector(quadradoFunction:)];
     
 }
 
@@ -75,7 +77,7 @@
     }
     
     if ([self checaFinalJogo]) {
-        [[self view] addGestureRecognizer: gestureQuadrado];
+        NSLog(@"FUKKKKKKK");
     }
 }
 
@@ -100,22 +102,21 @@
     [[self labelFimJogo] setHidden: YES];
     jogoAtivo = TRUE;
     [self randomizaLayout];
-    [[self view] removeGestureRecognizer: slideSugoi];
 }
 
-- (IBAction) quadradoFunction:(id)sender {
-    if (gestureQuadrado.sucesso) {
-        for (int i = 0; i < L; i++) {
-            for (int j = 0; j < L; j++) {
-                [[[[pecasController objectAtIndex:i] objectAtIndex:j] imagemPeca] setHidden:YES];
-            }
-        }
-        [minhaImagem setHidden:NO];
-    }
-    [gestureQuadrado setSucesso:FALSE];
-    [[self view] addGestureRecognizer: slideSugoi];
-    [[self view] removeGestureRecognizer: gestureQuadrado];
-}
+//- (IBAction) quadradoFunction:(id)sender {
+//    if (gestureQuadrado.sucesso) {
+//        for (int i = 0; i < L; i++) {
+//            for (int j = 0; j < L; j++) {
+//                [[[[pecasController objectAtIndex:i] objectAtIndex:j] imagemPeca] setHidden:YES];
+//            }
+//        }
+//        [minhaImagem setHidden:NO];
+//    }
+//    [gestureQuadrado setSucesso:FALSE];
+//    [[self view] addGestureRecognizer: slideSugoi];
+//    [[self view] removeGestureRecognizer: gestureQuadrado];
+//}
 
 - (void) receberImagensTabuleiro {
     for (int i = 0; i < L; i++) {

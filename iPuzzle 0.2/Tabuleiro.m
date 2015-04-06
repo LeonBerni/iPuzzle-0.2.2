@@ -25,13 +25,16 @@
         [[self minhasPecas] addObject: [[NSMutableArray alloc] init]];
         for (int j = 0; j < L; j++) {
             if (i == L-1 && j == L-1) {
-                CGRect size =  CGRectMake(X+(i*self.imagemUsada.frame.size.width/L), Y+(j*self.imagemUsada.frame.size.height/L),
+                CGRect size =  CGRectMake((i*self.imagemUsada.frame.size.width/L), (j*self.imagemUsada.frame.size.height/L),
                                           self.imagemUsada.frame.size.width/L, self.imagemUsada.frame.size.height/L);
                 
                 UIImageView *novaImageView = [[UIImageView alloc] init];
                 [novaImageView setBackgroundColor: [UIColor clearColor]];
-                
-                [novaImageView setFrame: CGRectMake (size.origin.x+250, size.origin.y+70, size.size.width, size.size.height)];
+                if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+                    [novaImageView setFrame: CGRectMake (size.origin.x+size.size.width/2, size.origin.y+70, size.size.width, size.size.height)];
+                } else{
+                    [novaImageView setFrame: CGRectMake (size.origin.x+125, size.origin.y+70, size.size.width, size.size.height)];
+                }
                 
                 [[[self minhasPecas] objectAtIndex:i] addObject: [[Peca alloc] initWithAll: novaImageView : i : j : FALSE]];
                 break;
@@ -53,14 +56,18 @@
             UIGraphicsEndImageContext();
             
             
-            CGRect size =  CGRectMake(X+(i*self.imagemUsada.frame.size.width/L), Y+(j*self.imagemUsada.frame.size.height/L),
+            CGRect size =  CGRectMake((i*self.imagemUsada.frame.size.width/L), (j*self.imagemUsada.frame.size.height/L),
                                       self.imagemUsada.frame.size.width/L, self.imagemUsada.frame.size.height/L);
             CGImageRef tmp = CGImageCreateWithImageInRect(imagemFinal.CGImage, size);
             UIImage *imagemCortada = [UIImage imageWithCGImage: tmp];
             CGImageRelease(tmp);
             
             UIImageView *novaImageView = [[UIImageView alloc] initWithImage: imagemCortada];
-            [novaImageView setFrame: CGRectMake (size.origin.x+250, size.origin.y+70, size.size.width, size.size.height)];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+                [novaImageView setFrame: CGRectMake (size.origin.x+size.size.width/2, size.origin.y+70, size.size.width, size.size.height)];
+            } else{
+                [novaImageView setFrame: CGRectMake (size.origin.x+125, size.origin.y+70, size.size.width, size.size.height)];
+            }
             [[[self minhasPecas] objectAtIndex:i] addObject: [[Peca alloc] initWithAll: novaImageView : i : j : TRUE]];
         }
     }

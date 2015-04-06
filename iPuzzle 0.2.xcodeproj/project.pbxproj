@@ -27,10 +27,6 @@
 		F21F958B18C11C2A000E199B /* Peca.m in Sources */ = {isa = PBXBuildFile; fileRef = F21F958A18C11C2A000E199B /* Peca.m */; };
 		F21F958D18C12579000E199B /* totoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F21F958C18C12579000E199B /* totoro.jpg */; };
 		F25BC6AC18CA650200519F67 /* dados.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BC6AB18CA650200519F67 /* dados.m */; };
-		F299A5F918C8EE0700141439 /* GESTURI.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5F818C8EE0700141439 /* GESTURI.m */; };
-		F299A5FA18C8EE0700141439 /* GESTURI.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5F818C8EE0700141439 /* GESTURI.m */; };
-		F299A5FD18C90BFE00141439 /* SlideDesu.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5FC18C90BFE00141439 /* SlideDesu.m */; };
-		F299A5FE18C90BFE00141439 /* SlideDesu.m in Sources */ = {isa = PBXBuildFile; fileRef = F299A5FC18C90BFE00141439 /* SlideDesu.m */; };
 		F2D8709618C7BE06001AC8CF /* totoro2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2D8709518C7BE06001AC8CF /* totoro2.jpg */; };
 /* End PBXBuildFile section */
 
@@ -75,10 +71,6 @@
 		F21F958C18C12579000E199B /* totoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = totoro.jpg; sourceTree = "<group>"; };
 		F25BC6AA18CA650200519F67 /* dados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dados.h; sourceTree = "<group>"; };
 		F25BC6AB18CA650200519F67 /* dados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dados.m; sourceTree = "<group>"; };
-		F299A5F718C8EE0700141439 /* GESTURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GESTURI.h; sourceTree = "<group>"; };
-		F299A5F818C8EE0700141439 /* GESTURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GESTURI.m; sourceTree = "<group>"; };
-		F299A5FB18C90BFE00141439 /* SlideDesu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideDesu.h; sourceTree = "<group>"; };
-		F299A5FC18C90BFE00141439 /* SlideDesu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideDesu.m; sourceTree = "<group>"; };
 		F2D8709518C7BE06001AC8CF /* totoro2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = totoro2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,10 +147,6 @@
 				5B46CE061AD2FF6F0080111F /* ImageDelegate.h */,
 				F21F956018C11579000E199B /* ViewController.h */,
 				F21F956118C11579000E199B /* ViewController.m */,
-				F299A5F718C8EE0700141439 /* GESTURI.h */,
-				F299A5F818C8EE0700141439 /* GESTURI.m */,
-				F299A5FB18C90BFE00141439 /* SlideDesu.h */,
-				F299A5FC18C90BFE00141439 /* SlideDesu.m */,
 				5BD27AC11ACDBEF5001BFFA5 /* MainMenuViewController.h */,
 				5BD27AC21ACDBEF5001BFFA5 /* MainMenuViewController.m */,
 				F21F956318C11579000E199B /* Images.xcassets */,
@@ -243,7 +231,7 @@
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F21F954718C11579000E199B = {
-						DevelopmentTeam = 754BL35T3Q;
+						DevelopmentTeam = 7BA896ETMQ;
 					};
 					F21F956818C11579000E199B = {
 						TestTargetID = F21F954718C11579000E199B;
@@ -301,12 +289,10 @@
 				F21F958B18C11C2A000E199B /* Peca.m in Sources */,
 				F21F956218C11579000E199B /* ViewController.m in Sources */,
 				F21F958818C11C0A000E199B /* Tabuleiro.m in Sources */,
-				F299A5F918C8EE0700141439 /* GESTURI.m in Sources */,
 				5BD27AC31ACDBEF5001BFFA5 /* MainMenuViewController.m in Sources */,
 				F21F955C18C11579000E199B /* AppDelegate.m in Sources */,
 				F25BC6AC18CA650200519F67 /* dados.m in Sources */,
 				F21F955818C11579000E199B /* main.m in Sources */,
-				F299A5FD18C90BFE00141439 /* SlideDesu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,9 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F299A5FE18C90BFE00141439 /* SlideDesu.m in Sources */,
 				F21F957718C11579000E199B /* iPuzzle_0_2Tests.m in Sources */,
-				F299A5FA18C8EE0700141439 /* GESTURI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
