@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnLib;
 @property (weak, nonatomic) IBOutlet UIButton *btnAbout;
 @property UIImage *imageToBeShuffled;
-@property (weak, nonatomic) IBOutlet UIImageView *ImageTaken;
+//@property (weak, nonatomic) IBOutlet UIImageView *ImageTaken;
 @property (weak, nonatomic) IBOutlet UIButton *btnOK;
 
 @end

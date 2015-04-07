@@ -61,7 +61,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
      self.imageToBeShuffled = info[UIImagePickerControllerEditedImage];
-     self.ImageTaken.image = self.imageToBeShuffled;
+//     self.ImageTaken.image = self.imageToBeShuffled;
     [self.btnOK setEnabled:YES];
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
