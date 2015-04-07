@@ -23,10 +23,10 @@
             minhaImagem = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"totoro2.jpg"]];
     }
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-    [minhaImagem setFrame: CGRectMake(0, 0, 256, 256)];
+    [minhaImagem setFrame: CGRectMake(self.view.frame.origin.x+35, self.view.frame.origin.y+70, 256, 256)];
     } else{
     
-    [minhaImagem setFrame: CGRectMake(0, 0, 512, 512)];
+    [minhaImagem setFrame: CGRectMake(self.view.frame.origin.x+125, self.view.frame.origin.y+70, 512, 512)];
     }
     meuTabuleiro = [[Tabuleiro alloc] initWithImage: minhaImagem];
     [[self view] addSubview: minhaImagem];
@@ -241,6 +241,29 @@
 
 -(void)setImage:(UIImage *)image{
     minhaImagem = [[UIImageView alloc] initWithImage: image];
+}
+- (IBAction)backToRootView:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+- (IBAction)showOrgImage:(id)sender {
+    if (minhaImagem.hidden) {
+        for (int i = 0; i < L; i++) {
+            for (int j = 0; j < L; j++) {
+                [[[[pecasController objectAtIndex:i] objectAtIndex:j] imagemPeca] setHidden:YES];
+            }
+        }
+        [minhaImagem setHidden:NO];
+    }
+    else{
+        for (int i = 0; i < L; i++) {
+            for (int j = 0; j < L; j++) {
+                [[[[pecasController objectAtIndex:i] objectAtIndex:j] imagemPeca] setHidden:NO];
+            }
+        }
+        [minhaImagem setHidden:YES];
+    }
+
+
 }
 
 @end
