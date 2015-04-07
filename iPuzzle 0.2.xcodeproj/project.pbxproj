@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		359E62171ACDC9E2003CED56 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359E62151ACDC9E2003CED56 /* Main_iPad.storyboard */; };
 		5BD27AC31ACDBEF5001BFFA5 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD27AC21ACDBEF5001BFFA5 /* MainMenuViewController.m */; };
+		5BED3E8A1AD4625700777246 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3E891AD4625700777246 /* AboutViewController.m */; };
 		F21F954C18C11579000E199B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F954B18C11579000E199B /* Foundation.framework */; };
 		F21F954E18C11579000E199B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F954D18C11579000E199B /* CoreGraphics.framework */; };
 		F21F955018C11579000E199B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F954F18C11579000E199B /* UIKit.framework */; };
@@ -45,6 +46,8 @@
 		5B46CE061AD2FF6F0080111F /* ImageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDelegate.h; sourceTree = "<group>"; };
 		5BD27AC11ACDBEF5001BFFA5 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		5BD27AC21ACDBEF5001BFFA5 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		5BED3E881AD4625700777246 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5BED3E891AD4625700777246 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		F21F954818C11579000E199B /* iPuzzle 0.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPuzzle 0.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21F954B18C11579000E199B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F21F954D18C11579000E199B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 				F21F956118C11579000E199B /* ViewController.m */,
 				5BD27AC11ACDBEF5001BFFA5 /* MainMenuViewController.h */,
 				5BD27AC21ACDBEF5001BFFA5 /* MainMenuViewController.m */,
+				5BED3E881AD4625700777246 /* AboutViewController.h */,
+				5BED3E891AD4625700777246 /* AboutViewController.m */,
 				F21F956318C11579000E199B /* Images.xcassets */,
 			);
 			path = "iPuzzle 0.2";
@@ -289,6 +294,7 @@
 			files = (
 				F21F958B18C11C2A000E199B /* Peca.m in Sources */,
 				F21F956218C11579000E199B /* ViewController.m in Sources */,
+				5BED3E8A1AD4625700777246 /* AboutViewController.m in Sources */,
 				F21F958818C11C0A000E199B /* Tabuleiro.m in Sources */,
 				5BD27AC31ACDBEF5001BFFA5 /* MainMenuViewController.m in Sources */,
 				F21F955C18C11579000E199B /* AppDelegate.m in Sources */,

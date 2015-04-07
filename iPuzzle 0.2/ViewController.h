@@ -23,6 +23,6 @@
     BOOL figuraUsada;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *labelFimJogo;
+@property (weak, nonatomic) IBOutlet UIImageView *labelFimJogo;
 
 @end

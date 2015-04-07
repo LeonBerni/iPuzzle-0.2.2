@@ -2,8 +2,8 @@
 //  AboutViewController.m
 //  iPuzzle 0.2
 //
-//  Created by Rodrigo P. Assunção on 4/2/15.
-//  Copyright (c) 2015 LEONARDO LEGRADY SALGADO GIGLIOTTI. All rights reserved.
+//  Created by Rodrigo P. Assunção on 4/7/15.
+//
 //
 
 #import "AboutViewController.h"
@@ -24,10 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)btnBackClick:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
 /*
 #pragma mark - Navigation
 
@@ -37,5 +33,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)back:(id)sender {
+    [[self navigationController] popToRootViewControllerAnimated:YES];
+}
 
 @end
